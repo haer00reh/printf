@@ -6,7 +6,7 @@
 /*   By: haer-reh <haer-reh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 15:05:01 by haer-reh          #+#    #+#             */
-/*   Updated: 2025/11/17 13:58:02 by haer-reh         ###   ########.fr       */
+/*   Updated: 2025/11/19 15:05:17 by haer-reh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,8 @@ int	ft_printf(const char *format, ...)
 	int		counter;
 	int		i;
 
+	if (!format)
+		return (-1);
 	i = 0;
 	counter = 0;
 	va_start(table, format);
